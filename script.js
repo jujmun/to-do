@@ -15,13 +15,13 @@ document.getElementById('form').addEventListener('submit', function(event){
     // Adding items to the list
     var inputValue = document.getElementById('textBox').value;
     if (inputValue !== ''){
-        
+
         const newItem = document.createElement('li');
         newItem.textContent = inputValue;
 
         // X button
         const Xbutton = document.createElement('button');
-        Xbutton.textContent = '✓';
+        Xbutton.textContent = '✔';
         Xbutton.classList.add('remove-button');
 
         Xbutton.addEventListener('click', function(){

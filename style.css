@@ -89,4 +89,9 @@ input[type="text"]{
         min-width: 100%;
         padding: 20px;
     }
+
+    .remove-button{
+        font-size: 10px;
+    }
+
 }
