@@ -78,20 +78,20 @@ input[type="text"]{
     background-color: #005c00;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     .input-box {
         font-size: 16px;
         padding: 8px;
     }
 
     .list {
-        max-width: 100%;
-        min-width: 100%;
+        max-width: 700px;
+        min-width: 700px;
         padding: 20px;
     }
 
     .remove-button{
-        font-size: 5px;
+        font-size: 10px;
         padding: 5px 3px;
     }
 
