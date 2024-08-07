@@ -7,11 +7,12 @@ body {
     display: flex;
     background-color: #000;
     font-family: 'Courier New';
-    font-size: 0.875rem; 
+    font-size: 16px; 
     color: #fff;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    margin-top: 100px;
 }
 
 .container {
@@ -28,12 +29,11 @@ h1 {
 }
 
 .input-box {
+    flex: 1;
     width: 100%;
     padding: 10px;
-    border: 2px solid #8a8a8a;
     border-radius: 4px;
-    font-size: 16px;
-    transition: border-color 0.3s ease;
+    font-size: 13px;
 }
 
 .list {
@@ -49,14 +49,6 @@ input[type="text"]{
     flex: 1;
 }
 
-.input-box {
-    flex: 1;  
-}
-
-.taskSheet {
-    padding: 0px;
-    list-style-type: decimal;
-}
 
 .taskSheet li {
     color: #fff;
@@ -69,11 +61,19 @@ input[type="text"]{
     border-radius: 4px;
 }
 
+.taskSheet {
+    padding: 0px;
+    list-style-type: decimal-leading-zero; /* Ensure the list items are numbered */
+    margin: 0;
+}
+
+
 .remove-button{
     background-color: #00aa00;
-    padding: 0px 0px;
     cursor: pointer;
+    font-size: 20px;
 }
+
 .remove-button:hover {
     background-color: #005c00;
 }

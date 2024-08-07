@@ -26,7 +26,7 @@ document.getElementById('form').addEventListener('submit', function(event){
 
     // X button
     const Xbutton = document.createElement('button');
-    Xbutton.textContent = '✅';
+    Xbutton.textContent = '✓';
     Xbutton.classList.add('remove-button');
 
     Xbutton.addEventListener('click', function(){
