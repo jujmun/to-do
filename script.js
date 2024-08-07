@@ -9,6 +9,18 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('title').textContent = `To-Do for ${formattedDate}`;
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    function adjustMaxLength() {
+        const inputBox = document.getElementById('textBox');
+        inputBox.setAttribute('maxlength', window.innerWidth <= 600 ? '20' : '30');
+    }
+
+    adjustMaxLength();
+    window.addEventListener('resize', adjustMaxLength);
+});
+
+
+
 document.getElementById('form').addEventListener('submit', function(event){
     event.preventDefault();
 
