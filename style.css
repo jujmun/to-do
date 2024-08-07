@@ -82,9 +82,9 @@ input[type="text"]{
     background-color: #005c00;
 }
 
-@media () {
+@media (max-width: 600px) {
     .list {
         max-width: 400px;
-        min-width: 400px;
+        min-width: 300px;
     }
 }
