@@ -85,13 +85,13 @@ input[type="text"]{
     }
 
     .list {
-        max-width: 700px;
-        min-width: 700px;
+        max-width: 600px;
+        min-width: 300px;
         padding: 20px;
     }
 
     .remove-button{
-        font-size: 10px;
+        font-size: 15px;
         padding: 5px 3px;
     }
 
