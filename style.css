@@ -77,3 +77,16 @@ input[type="text"]{
 .remove-button:hover {
     background-color: #005c00;
 }
+
+@media (max-width: 600px) {
+    .input-box {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .list {
+        max-width: 100%;
+        min-width: 100%;
+        padding: 20px;
+    }
+}
