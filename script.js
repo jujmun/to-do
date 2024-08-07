@@ -1,0 +1,49 @@
+
+
+
+document.addEventListener('DOMContentLoaded', function(){
+    const today = new Date();
+    const options = {year: 'numeric', month: 'long', day: 'numeric'};
+    const formattedDate = today.toLocaleDateString(undefined, options);
+
+    document.getElementById('title').textContent = `To-Do for ${formattedDate}`;
+});
+
+document.getElementById('form').addEventListener('submit', function(event){
+    event.preventDefault();
+
+    // Adding items to the list
+    var inputValue = document.getElementById('textBox').value;
+    if (inputValue != ''){
+        const newItem = document.createElement('li');
+        newItem.textContent = inputValue;
+            // // Adding the date 
+    // var inputDate = document.getElementById('dueDate').value;
+    // const newDate = document.createElement('li');
+    // newDate.textContent = inputDate;
+    // newItem.appendChild(newDate);
+    // document.getElementById('dueDate').value='';
+
+    // X button
+    const Xbutton = document.createElement('button');
+    Xbutton.textContent = '✅';
+    Xbutton.classList.add('remove-button');
+
+    Xbutton.addEventListener('click', function(){
+        newItem.remove();
+        confetti({
+            particleCount: 500,
+            spread: 70,
+            origin: { y: 1 },
+          });
+    })
+
+    // Adding everything to the list
+    newItem.appendChild(Xbutton);
+    document.getElementById('taskSheet').appendChild(newItem);
+    document.getElementById('textBox').value='';
+    }   
+});
+
+
+

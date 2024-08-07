@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    background-color: #000;
+    font-family: 'Courier New';
+    font-size: 0.875rem; 
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+}
+
+h1 {
+    font-family: 'Courier New'; /* Change this to your desired font */
+    font-size: 20px; /* Adjust the size as needed */
+    margin-bottom: 15px;
+    max-width: 400px;
+}
+
+.input-box {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #8a8a8a;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.list {
+    border-radius: 5px;
+    padding: 25px 25px;
+    text-align: justify;
+    max-width: 400px;
+    background-color: #343434;
+    min-width: 400px;
+}
+
+input[type="text"]{
+    flex: 1;
+}
+
+.input-box {
+    flex: 1;  
+}
+
+.taskSheet {
+    padding: 0px;
+    list-style-type: decimal;
+}
+
+.taskSheet li {
+    color: #fff;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #414141;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.remove-button{
+    background-color: #00aa00;
+    padding: 0px 0px;
+    cursor: pointer;
+}
+.remove-button:hover {
+    background-color: #005c00;
+}
